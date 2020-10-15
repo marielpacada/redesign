@@ -1,14 +1,207 @@
 <!doctype html>
+<html lang="en">
 
-<html>
-  <head>
-    <title>INSERT TITLE HERE!</title>
-    <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-  </head>
 
-  <body>
-    <!-- TODO: put your HTML code here! -->
-  </body>
+<head>
+	<title>UkuTabs -- Ukulele Tabs and Chords</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bootstrap.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md" id="nav">
+	<div class="container-fluid">
+		<a class="navbar-brand nav-item" href="#" id="logo">ukutabs</a>
+		<div class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-auto" id="nav-options">
+				<li class="nav-item">
+					<a class="nav-link" href="#popular" id="nav-op">popular</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#tips" id="nav-op">tips</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#discover" id="nav-op">discover</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#ukuworld" id="nav-op">ukuworld</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact" id="nav-op">contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="ukulele-mast section">
+	<h1 class="display-2" id="welcome">welcome to ukutabs!</h1>
+	<p class="h4" id="subhead">ukutabs is your trusted source in finding chords and tabs for all of your favorite songs!</p>
+	<input id="search-bar" class="form-control rounded-pill" type="text" placeholder="enter a song or artist!" aria-label="Search">
+</div>
+
+<a id="popular">
+<div class="section body-section">
+	<h1 class="section-title">• popular songs •</h1>
+	<div class="section-content">
+
+		<!-- first table -->
+		<div>
+		<table class="table table-bordered" id="table">
+			<thead class="thead-dark">
+				<tr>
+					<th colspan="2" id="table-header">
+						<a href="https://ukutabs.com/" id="table-header-text" target="_blank">ten latest songs »</a>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>Charlie Gillespie » <a href="https://ukutabs.com/" target="_blank"><b>Unsaid Emily</b></a></td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Eloise » <a href="https://ukutabs.com/" target="_blank"><b>Left Side</b></a></td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td>Ariana Grande » <a href="https://ukutabs.com/" target="_blank"><b>Just A Little Bit Of Your Heart</b></a></td>
+				</tr>
+				<tr>
+					<th scope="row">4</th>
+					<td>Harry Styles » <a href="https://ukutabs.com/" target="_blank"><b>Carolina</b></a></td>
+				</tr>
+				<tr>
+					<th scope="row">5</th>
+					<td>Katy Perry » <a href="https://ukutabs.com/" target="_blank"><b>Cry About It Later</b></a></td>
+				</tr>
+				<tr>
+					<th scope="row">6</th>
+					<td>Sufjan Stevens » <a href="https://ukutabs.com/" target="_blank"><b>Video Game</b></a></td>
+				</tr>
+				<tr>
+					<th scope="row">7</th>
+					<td>Cavetown » <a href="https://ukutabs.com/" target="_blank"><b>Smoke Signals</b></a></td>
+				</tr>
+				<tr>
+					<th scope="row">8</th>
+					<td>The Neighbourhood » <a href="https://ukutabs.com/" target="_blank"><b>Hell Or High Water</b></a></td>
+				</tr>
+				<tr>
+					<th scope="row">9</th>
+					<td>Taylor Swift » <a href="https://ukutabs.com/" target="_blank"><b>Peace</b></a></td>
+				</tr>
+				<tr>
+					<th scope="row">10</th>
+					<td>Claire Rosinkranz » <a href="https://ukutabs.com/" target="_blank"><b>Backyard Boy</b></a></td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+
+		<!-- second table -->
+		<div>
+		<table class="table table-bordered" id="table">
+			<thead class="thead-dark">
+				<tr>
+					<th colspan="2" id="table-header">
+						<a href="https://ukutabs.com/" id="table-header-text" target="_blank">top ten songs today »</a>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>Conan Gray » <a href="https://ukutabs.com/" target="_blank"><b>Heather</b></a></td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Twenty One Pilots » <a href="https://ukutabs.com/" target="_blank"><b>Can't Help Falling In Love</b></a></td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td>Israël Kamakawiwo'ole » <a href="https://ukutabs.com/" target="_blank"><b>Over The Rainbow</b></a></td>
+				</tr>
+				<tr>
+					<th scope="row">4</th>
+					<td>Jason Mraz » <a href="https://ukutabs.com/" target="_blank"><b>I'm Yours</b></a></td>
+				</tr>
+				<tr>
+					<th scope="row">5</th>
+					<td>Frank Sinatra » <a href="https://ukutabs.com/" target="_blank"><b>Fly Me To The Moon</b></a></td>
+				</tr>
+				<tr>
+					<th scope="row">6</th>
+					<td>Cristin Milioti » <a href="https://ukutabs.com/" target="_blank"><b>La Vie En Rose</b></a></td>
+				</tr>
+				<tr>
+					<th scope="row">7</th>
+					<td>Plain White T's » <a href="https://ukutabs.com/" target="_blank"><b>Hey There Delilah</b></a></td>
+				</tr>
+				<tr>
+					<th scope="row">8</th>
+					<td>Leonard Cohen » <a href="https://ukutabs.com/" target="_blank"><b>Hallelujah</b></a></td>
+				</tr>
+				<tr>
+					<th scope="row">9</th>
+					<td>Misc Cartoons » <a href="https://ukutabs.com/" target="_blank"><b>Someone To Lava</b></a></td>
+				</tr>
+				<tr>
+					<th scope="row">10</th>
+					<td>Billie Eilish » <a href="https://ukutabs.com/" target="_blank"><b>idontwannabeyouanymore</b></a></td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+	</div>
+</div>
+</a>
+
+<a id="tips">
+<div class="section body-section">
+	<h1 class="section-title">• tips and guides •</h1>
+	<div class="section-content parent" id="guide-box">
+		<div class="guide-inner">
+			<a href="https://ukutabs.com/" target="_blank"><img src="/images/guides/guide1.png" alt="book with blue bind"></a>
+			<p>history</p>
+		</div>
+
+		<div class="guide-inner">
+			<a href="https://ukutabs.com/" target="_blank"><img src="/images/guides/guide2.png" alt="book with teal bind"></a>
+			<p>cleaning</p>
+		</div>
+
+		<div class="guide-inner">
+			<a href="https://ukutabs.com/" target="_blank"><img src="/images/guides/guide5.png" alt="book with coral bind"></a>
+			<p>budget uke</p>
+		</div>
+
+		<div class="guide-inner">
+			<a href="https://ukutabs.com/" target="_blank"><img src="/images/guides/guide4.png" alt="book with maroon bind"></a>
+			<p>guitar vs. uke?</p>
+		</div>
+
+		<div class="guide-inner">
+			<a href="https://ukutabs.com/" target="_blank"><img src="/images/arrow.png" alt="arrows" id="arrows"></a>
+			<p>more!</p>
+		</div>
+	</div>
+</div>
+</a>
+
+<a id="discover">
+<div class="section body-section">
+	<h1 class="section-title">• discover new songs •</h1>
+</div>
+
+
+
+</a>
+	
+
+</body>
 </html>

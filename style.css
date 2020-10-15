@@ -1,0 +1,133 @@
+#nav { 
+    background-color: #330F0A;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+#logo { 
+    color: #EFDD8D;
+    font-family: "fredoka_oneregular", Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+}
+#logo:hover { 
+    color: #F3A916;
+}
+#nav-options { 
+    font-family: "futura";
+    font-size: 1.5rem;
+}
+#nav-op { 
+    color: white; 
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+#nav-op:hover { 
+    color: #B1B1B1; 
+}
+#welcome {
+    color: white;
+    text-shadow: -3px 3px #C5C5C5;
+}
+#subhead { 
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+#search-bar { 
+    width: 30rem;
+}
+#table { 
+    border-color: #c4c4c4;
+}
+#table-header { 
+    background-color: #65743A;
+}
+#table-header-text { 
+    color: white;
+}
+#table-header-text:hover { 
+    color: #C4C4C4;
+}
+#guide-box { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #CFB9A5;
+    justify-content: space-evenly;
+    padding: 4rem;
+    width: auto;
+    border-radius: 50px;
+}
+#arrows:hover { 
+    opacity: 50%;
+}
+.guide-inner { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ukulele-mast {
+    background: url(./images/uku.jpg) center;
+    height: 65vh;
+}
+.section { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "futura";
+}
+.body-section { 
+    padding-top: 4rem;
+}
+.section-title { 
+    font-size: 3rem;
+    text-shadow: -2.5px 2.5px #A9A9A9;
+    padding-bottom: 4rem;
+}
+.section-content { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "futura";
+}
+html body{ 
+    background-color: #F4F0DB;
+    padding: 0;
+    margin: 0;
+}
+td { 
+    color: #9F441D;
+}
+b { 
+    color: #33040A;
+}
+b:hover { 
+    color: #F5A051;
+}
+a:link { 
+    text-decoration: none;
+}
+table { 
+    width: auto;
+}
+img { 
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+img:hover { 
+    filter: brightness(125%);
+}
+@font-face {
+    font-family: "fredoka_oneregular";
+    src: url("/fonts/fredoka/fredoka.otf");
+}
+
+@font-face {
+    font-family: "futura";
+    src: url("/fonts/futura/futura-medium.ttf");
+}
+
