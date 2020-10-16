@@ -336,7 +336,7 @@ button {
     src: url("/fonts/futura/futura-medium.ttf");
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     #nav {
         justify-content: center;
         text-align: center;
