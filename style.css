@@ -1,126 +1,331 @@
-#nav { 
+#nav {
     background-color: #330F0A;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
 }
-#logo { 
+
+#logo {
     color: #EFDD8D;
     font-family: "fredoka_oneregular", Arial, Helvetica, sans-serif;
     font-size: 5rem;
+    text-shadow: -3.5px 3.5px #F3A916;
 }
-#logo:hover { 
-    color: #F3A916;
-}
-#nav-options { 
-    font-family: "futura";
+
+#nav-options {
     font-size: 1.5rem;
 }
-#nav-op { 
-    color: white; 
+
+#nav-op {
+    color: white;
     padding-left: 1rem;
     padding-right: 1rem;
 }
-#nav-op:hover { 
-    color: #B1B1B1; 
-}
+
 #welcome {
     color: white;
     text-shadow: -3px 3px #C5C5C5;
+    text-align: center;
+    max-width: 80%;
 }
-#subhead { 
+
+#subhead {
     color: white;
     padding-top: 1rem;
     padding-bottom: 2rem;
     text-align: center;
+    max-width: 80%;
 }
-#search-bar { 
+
+#search-bar {
     width: 30rem;
+    max-width: 60%;
 }
-#table { 
+
+.my-table {
     border-color: #c4c4c4;
+    width: 29rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0;
 }
-#table-header { 
+
+#flower-link {
+    cursor: default;
+}
+
+#genre {
+    color: black;
+}
+
+#table-header {
     background-color: #65743A;
 }
-#table-header-text { 
+
+#table-header-text {
     color: white;
+    justify-content: center;
 }
-#table-header-text:hover { 
-    color: #C4C4C4;
-}
-#guide-box { 
+
+#guide-box {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #CFB9A5;
     justify-content: space-evenly;
     padding: 4rem;
-    width: auto;
+    width: 80%;
+    max-width: 1300px;
     border-radius: 50px;
+    padding-bottom: 2rem;
 }
-#arrows:hover { 
-    opacity: 50%;
+
+#my-video {
+    width: auto;
+    border-color: #c4c4c4;
 }
-.guide-inner { 
+
+#video-row {
+    height: 10rem;
+}
+
+#video-cell {
+    padding: 0;
+}
+
+#ukuworld-sub {
+    margin-top: -3rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+#flower {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0;
+}
+
+#flower.animate-in {
+    animation: fade-in 2s linear;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: .5
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#flower.animate-out {
+    animation: fade-out 2s linear;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: .5
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.guide-inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .ukulele-mast {
     background: url(./images/uku.jpg) center;
-    height: 65vh;
+    height: 100vh;
+    max-height: 840px;
 }
-.section { 
+
+.section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: "futura";
 }
-.body-section { 
-    padding-top: 4rem;
+
+.body-section {
+    padding-top: 150px;
 }
-.section-title { 
+
+.icon {
+    height: 5rem;
+    width: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, .5);
+    border-radius: 21px;
+}
+
+.section-title {
     font-size: 3rem;
     text-shadow: -2.5px 2.5px #A9A9A9;
     padding-bottom: 4rem;
+    text-align: center;
 }
-.section-content { 
+
+.uku-icon {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: "futura";
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0;
 }
-html body{ 
+
+.section-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#icon-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #CFB9A5;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: auto;
+    max-width: 80%;
+    height: auto;
+    border-radius: 50px;
+    padding-bottom: 1rem;
+}
+
+.social {
+    height: 2.5rem;
+    width: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+#contact-text {
+    margin-top: 200px;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#social-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+html body {
     background-color: #F4F0DB;
     padding: 0;
     margin: 0;
+    font-family: "futura";
+    margin-bottom: 25rem;
 }
-td { 
+
+.artist {
     color: #9F441D;
 }
-b { 
+
+tr:nth-child(odd) {
+    background-color: #FFF8DC;
+}
+
+tr:nth-child(even) {
+    background-color: #FFFAF1;
+}
+
+iframe {
+    width: auto;
+    height: auto;
+}
+
+b {
     color: #33040A;
 }
-b:hover { 
-    color: #F5A051;
-}
-a:link { 
+
+a:link {
     text-decoration: none;
 }
-table { 
-    width: auto;
-}
-img { 
+
+.book {
     padding-right: 2rem;
     padding-left: 2rem;
     padding-bottom: 1rem;
 }
-img:hover { 
-    filter: brightness(125%);
+
+.uku-text {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: .5rem;
 }
+
+button {
+    border: none;
+    background-color: #EFDD8D;
+    color: black;
+    padding: .25rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    stroke: #C5C5C5;
+}
+
+@media not all and (pointer: coarse) {
+    button:hover {
+        text-decoration: underline;
+        background-color: #B07C6F;
+        color: white;
+    }
+    img:hover {
+        filter: brightness(125%);
+    }
+    b:hover {
+        color: #F5A051;
+    }
+    .icon:hover {
+        filter: brightness(50%);
+    }
+    .artist:hover {
+        color: #33040A;
+    }
+    #flower:hover {
+        filter: invert(25%)
+    }
+    #logo:hover {
+        color: #F3A916;
+        text-shadow: -3.5px 3.5px #EFDD8D;
+    }
+    #nav-op:hover {
+        color: #B1B1B1;
+    }
+    #table-header-text:hover {
+        color: #c9c9c9;
+    }
+    #arrows:hover {
+        filter: invert(100%)
+    }
+    #genre:hover {
+        color: #C5C5C5;
+    }
+}
+
 @font-face {
     font-family: "fredoka_oneregular";
     src: url("/fonts/fredoka/fredoka.otf");
@@ -129,5 +334,21 @@ img:hover {
 @font-face {
     font-family: "futura";
     src: url("/fonts/futura/futura-medium.ttf");
+}
+
+@media (max-width: 768px) {
+    #nav {
+        justify-content: center;
+        text-align: center;
+    }
+    #flower { 
+        width: 50px;
+        height: 50px;
+        bottom: 100px;
+        right: 100px;
+    }
+    #search-bar { 
+        text-align: center;
+    }
 }
 
