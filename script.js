@@ -49,6 +49,7 @@ function search() {
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
+
     document.getElementById("sidenav-button").style.marginLeft = "250px";
     document.getElementById("sidenav-button").style.cursor = "default";
     document.getElementById("sidenav-button").style.filter = "grayscale(100%)";

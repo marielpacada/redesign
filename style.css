@@ -50,6 +50,7 @@
     border: none;
     height: 48px;
     align-self: center;
+    padding-left: 20px;
 }
 
 [placeholder]:focus::-webkit-input-placeholder {
@@ -529,7 +530,6 @@ a:link {
     transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
 
 
 
