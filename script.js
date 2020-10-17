@@ -1,12 +1,17 @@
 function collapse_nav() {
     // element heights
     var nav_height = document.getElementById("nav").clientHeight;
-    var scroll_height = document.documentElement.scrollTop; 
+    var scroll_height = document.documentElement.scrollTop;
 
-    if (scroll_height > .4 * nav_height) { 
+    if (scroll_height > .4 * nav_height) {
         document.getElementById("logo").style.fontSize = "3rem";
-    } else { 
+        document.getElementById("dropbtn").style.fontSize = "1rem";
+        document.getElementById("dropbtn").style.paddingLeft = "1rem";
+        document.getElementById("dropbtn").style.paddingTop = "2rem";
+
+    } else {
         document.getElementById("logo").style.fontSize = "5rem";
+        document.getElementById("dropbtn").style.fontSize = "1.5rem";
     }
 }
 
@@ -14,12 +19,10 @@ var down_scroll = false;
 var up_scroll = false;
 
 function draw_flower() {
-    var nav_height = document.getElementById("nav").clientHeight;
-    var scroll_height = document.documentElement.scrollTop; 
     var flower = document.getElementById("flower");
     var flower_link = document.getElementById("flower-link");
 
-    if (down_scroll) { 
+    if (down_scroll) {
         return;
     }
 
@@ -28,13 +31,29 @@ function draw_flower() {
     flower.style.opacity = "1";
     flower_link.href = "#";
     flower_link.style.cursor = "pointer";
-    down_scroll = true; 
+    down_scroll = true;
 }
 
 
-function hello() { 
+function search() {
     var text = document.getElementById("search-bar").value;
+    if (text == "") {
+        alert("type something, silly!");
+        return;
+    }
     alert('"' + text + '"? omg i like that song too!! •ᴗ• (p.s. am not storing your input or anything so feel free to be as weird as you want hehe)');
     document.getElementById("search-bar").value = "";
     return;
 }
+
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }

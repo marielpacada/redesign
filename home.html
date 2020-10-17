@@ -14,14 +14,104 @@
 
 <body onscroll="collapse_nav(); draw_flower();">
 
-	<div id="flower">
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+		<a href="https://ukutabs.com/favorites/#loaded" target="_blank">♥ &nbsp; your favorites</a>
+		<a href="#">✉ &nbsp; submit a song</a>
+		<a href="#">✐ &nbsp; request a song</a>
+		<a href="#">✰ &nbsp; top 99 viewed</a>
+		<a href="#">✰ &nbsp; top 99 liked</a>
+		<a href="#">✰ &nbsp; top 99 favorited</a>
+		<a href="#">♫ &nbsp; all genres</a>
+		<a href="#">☺ &nbsp; all artists</a>
+		<a href="#">𝄡 &nbsp; all difficulties</a>
+	</div>
+
+
+
+
+
+
+	<div id="main">
+		<div id="sidenav-button" onclick="openNav()">➤</div>
+	</div>
+	<div>
 		<a href="javascript:void(0)" title="scroll to top!" id="flower-link">
-			<img src="images/flower.gif" width="200px" alt="cute pink smiling flower">
+			<img src="images/flower.gif" alt="cute pink smiling flower" id="flower">
 		</a>
 	</div>
 
 	<nav class="navbar fixed-top navbar-expand-lg" id="nav">
-		<a class="navbar-brand nav-item" href="https://floating-journey-88183.herokuapp.com/" id="logo">ukutabs</a>
+		<a class="navbar-brand nav-item href=" #" id="logo">ukutabs</a>
+		<div class="dropdown">
+			<p id="dropbtn" class="navbar-brand nav-item" style="cursor: default;">▼</p>
+			<div class="dropdown-content">
+
+				<a href="https://ukutabs.com/favorites/#loaded" target="_blank">♥ &nbsp; your favorites</a>
+				<a href="#">✉ &nbsp; submit a song</a>
+				<a href="#">✐ &nbsp; request a song</a>
+
+				<div class="sidemenu">
+					<a href="#" style="width: 232px; background-color: #C8D6AF;width: 200px;">✰ &nbsp; top 99
+						viewed
+						»</a>
+					<div class="side-content">
+						<a href="#">⧗ &nbsp; last 24 hours</a>
+						<a href="#">⧗ &nbsp; all time</a>
+					</div>
+				</div>
+
+				<div class="sidemenu">
+					<a href="#" style="width: 232px; background-color: #FFF8DC; width: 200px;">✰ &nbsp; top 99
+						liked
+						»</a>
+					<div class="side-content">
+						<a href="#">⧗ &nbsp; today</a>
+						<a href="#">⧗ &nbsp; this week</a>
+						<a href="#">⧗ &nbsp; this month</a>
+						<a href="#">⧗ &nbsp; this year</a>
+						<a href="#">⧗ &nbsp; all time</a>
+					</div>
+				</div>
+
+				<a href="#">✰ &nbsp; top 99 favorited</a>
+				<a href="#">♫ &nbsp; all genres</a>
+				<a href="#">☺ &nbsp; all artists</a>
+
+				<div class="sidemenu">
+					<a href="#" style="width: 232px; background-color: #FFF8DC;width: 200px;">𝄡 &nbsp; all
+						difficulties
+						»</a>
+					<div class="side-content" id="last-op">
+						<a href="#">⧗ &nbsp; level 1</a>
+						<a href="#">⧗ &nbsp; level 2</a>
+						<a href="#">⧗ &nbsp; level 3</a>
+						<a href="#">⧗ &nbsp; level 4</a>
+						<a href="#">⧗ &nbsp; level 5</a>
+					</div>
+				</div>
+
+
+
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		<div class="collapse navbar-collapse">
 			<ul class="navbar-nav ml-auto" id="nav-options">
 				<li class="nav-item">
@@ -46,10 +136,15 @@
 
 	<div class="ukulele-mast section">
 		<h1 class="display-2" id="welcome">welcome to ukutabs!</h1>
-		<p class="h4" id="subhead">ukutabs is your trusted source in finding chords and tabs for all of your favorite
+		<p class="h4" id="subhead">ukutabs is your trusted source for chords and tabs of all your favorite
 			songs!</p>
-		<input id="search-bar" class="form-control rounded-pill" type="text" placeholder="enter a song or artist!"
-			aria-label="Search" value="" onchange="hello()">
+		<span id="search">
+			<input id="search-bar" class="form-control rounded-pill" type="text" placeholder=" enter a song or artist!"
+				aria-label="Search" value="" onchange="search()">
+			<button type="button" id="search-button" onclick="search()">
+				<img width="35px" style="-webkit-transform: scaleX(-1); transform: scaleX(-1);" src="images/search.png">
+			</button>
+		</span>
 	</div>
 
 	<a id="popular">
@@ -93,7 +188,8 @@
 							</tr>
 							<tr>
 								<th scope="row">4</th>
-								<td><a class="artist" href="https://ukutabs.com/b/bts/" target="_blank">BTS</a> »
+								<td><a class="artist" href="https://ukutabs.com/b/bts/" target="_blank">BTS</a>
+									»
 									<a href="https://ukutabs.com/b/bts/dynamite-two/"
 										target="_blank"><b>Dynamite</b></a>
 								</td>
@@ -108,7 +204,8 @@
 							</tr>
 							<tr>
 								<th scope="row">6</th>
-								<td><a class="artist" href="https://ukutabs.com/g/gnash/" target="_blank">Gnash</a> »
+								<td><a class="artist" href="https://ukutabs.com/g/gnash/" target="_blank">Gnash</a>
+									»
 									<a href="https://ukutabs.com/g/gnash/the-broken-hearts-club/" target="_blank"><b>the
 											broken hearts club</b></a>
 								</td>
@@ -141,7 +238,8 @@
 								<th scope="row">10</th>
 								<td><a class="artist" href="https://ukutabs.com/m/mitski/strawberry-blond/"
 										target="_blank">Mitski</a> »
-									<a href="https://ukutabs.com/m/mitski/" target="_blank"><b>Strawberry Blond</b></a>
+									<a href="https://ukutabs.com/m/mitski/" target="_blank"><b>Strawberry
+											Blond</b></a>
 								</td>
 							</tr>
 						</tbody>
@@ -235,7 +333,8 @@
 								<th scope="row">9</th>
 								<td><a class="artist" href="https://ukutabs.com/c/coldplay/"
 										target="_blank">Coldplay</a> »
-									<a href="https://ukutabs.com/c/coldplay/viva-la-vida/" target="_blank"><b>Viva La
+									<a href="https://ukutabs.com/c/coldplay/viva-la-vida/" target="_blank"><b>Viva
+											La
 											Vida</b></a>
 								</td>
 							</tr>
@@ -308,7 +407,8 @@
 						<tbody>
 							<tr>
 								<th scope="row">1</th>
-								<td><a class="artist" href="https://ukutabs.com/a/adele/" target="_blank">Adele</a> »
+								<td><a class="artist" href="https://ukutabs.com/a/adele/" target="_blank">Adele</a>
+									»
 									<a href="https://ukutabs.com/a/adele/hello-two/" target="_blank"><b>Hello</b></a>
 								</td>
 							</tr>
@@ -355,7 +455,8 @@
 					<table class="table table-bordered">
 						<thead class="thead-dark">
 							<tr>
-								<th colspan="1" id="table-header" style="color: white;">check out this video!</th>
+								<th colspan="1" id="table-header" style="color: white;">check out this video!
+								</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -369,7 +470,8 @@
 							<tr>
 								<td class="d-flex justify-content-center">
 									<a href="https://ukutube.com/" target="_blank">
-										<button type="button">submit your own video! »</button>
+										<button id="video-button" type="button">submit your own video!
+											»</button>
 									</a>
 								</td>
 							</tr>
@@ -381,7 +483,8 @@
 					<table class="table table-bordered">
 						<thead class="thead-dark">
 							<tr>
-								<th colspan="1" id="table-header" style="color: white;">explore these genres!</th>
+								<th colspan="1" id="table-header" style="color: white;">explore these genres!
+								</th>
 							</tr>
 						</thead>
 						<tbody>
