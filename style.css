@@ -359,7 +359,7 @@ a:link {
     }
     .dropdown-content a:hover {
         color: white;
-        background-color: #2F4F4F !important;
+        background-color: #2F4F4F!important;
     }
 
 }
@@ -569,7 +569,7 @@ a:link {
     color: #330F0A;
     font-size: 20px;
     box-shadow: -3px 3px #F3A916;
-    transition: margin-left .5s !important;
+    transition: margin-left .5s!important;
     padding: 0;
 }
 
