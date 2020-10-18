@@ -7,7 +7,7 @@
 
 #logo {
     color: #EFDD8D;
-    font-family: "fredoka_oneregular", Arial, Helvetica, sans-serif;
+    font-family: "fredoka_oneregular", "futura", Arial, Helvetica, sans-serif;
     font-size: 5rem;
     text-shadow: -3.5px 3.5px #F3A916;
     margin-right: 0;
@@ -262,7 +262,7 @@ html body {
     background-color: #F4F0DB;
     padding: 0;
     margin: 0;
-    font-family: "futura";
+    font-family: "futura", Arial, Helvetica, sans-serif;
     margin-bottom: 25rem;
 }
 
