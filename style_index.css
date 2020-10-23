@@ -1,0 +1,320 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 150%;
+    padding-bottom: 20rem;
+}
+
+#uke-icon {
+    height: 200px;
+    width: 200px;
+}
+
+#main {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#header {
+    background-color: #EAF9D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+.section-title {
+    background-color: #2B470B;
+    color: white;
+    width: max-content;
+    padding: .5rem;
+    font-style: italic;
+}
+
+.section {
+    margin-top: 10rem;
+}
+
+.section-body {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.og-img {
+    margin-top: 2rem;
+    border: 5px solid #555;
+    height: 500px;
+}
+
+.lofi-desktop {
+    padding: 1rem;
+    height: 200px;
+}
+
+.lofi-tablet {
+    padding: 1rem;
+    height: 250px;
+}
+
+.lofi-mobile {
+    padding: 1rem;
+    height: 280px;
+}
+
+.section-imgs {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+    align-self: flex-end;
+}
+
+.subsection-imgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+#desktop-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 331px;
+    font-size: 2rem;
+}
+
+#tablet-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 176px;
+    font-size: 2rem;
+}
+
+#mobile-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 300px;
+    width: 130px;
+    font-size: 2rem;
+}
+
+.title-text {
+    background-color: #568D16;
+    color: white;
+    font-style: italic;
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+#proto-section {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#proto-text {
+    padding-bottom: 2rem;
+}
+
+#desktop-imgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    width: 60%;
+}
+
+#tablet-imgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+#mobile-imgs {
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+#lofi-imgs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.mini-text {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    padding: .5rem;
+    background-color: #568D16;
+    color: white;
+    font-style: italic;
+}
+
+.lofi-annotated {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+#proto-exp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#mobile-exp { 
+    width: 40%;
+}
+
+.lofi-individual { 
+    height: 300px;
+    padding: 5px;
+}
+
+
+#hifi-annotations-main { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.hifi-annotations-sub { 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.hifi-desktop { 
+    height: 475px;
+    width: auto;
+    padding: 1rem;
+}
+
+.hifi-desk-text { 
+    width: 40%;
+    height: auto;
+}
+
+.hifi-tab-text { 
+    width: 50%;
+    height: auto;
+}
+
+.hifi-smaller { 
+    height: 300px;
+    width: auto;
+    padding: 1rem;
+}
+
+.hifi-tab-text-smaller { 
+    width: 27%;
+    height: auto;
+}
+
+.hifi-tab-text-xsmall { 
+    width: 15%;
+    height: auto;
+}
+
+.hifi-annotations-sub-smaller { 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hifi-xsmall { 
+    height: 320px;
+    width: auto;
+    padding: .5rem;
+}
+
+.reflection-text { 
+    width: 100%;
+    padding-top: 4rem;
+
+}
+
+#site-button {
+    border: none;
+    background-color: #EFDD8D;
+    color: black;
+    padding: .25rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    stroke: #C5C5C5;
+    box-shadow: -5px 5px #F3A916;
+    font-size: x-large;
+    margin: 1rem;
+    font-family: "futura", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+#site-button:hover {
+    background-color: #F3A916;
+    box-shadow: -5px 5px #EFDD8D;
+    color: white;
+}
+
+@font-face {
+    font-family: "futura";
+    src: url("/fonts/futura/futura-medium.ttf");
+}
+
+#takeaway-section { 
+    display: flex;
+    flex-direction: row;
+    padding-top: 3rem;
+}
+
+#takeaway-text { 
+    width: 60%;
+    padding-top: 4.5rem ;
+}
+
+.stuff-img { 
+
+    height: 400px;
+    padding-right: 5rem;
+}

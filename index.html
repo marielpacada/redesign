@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <title>Ukutabs Redesign</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="icon" href="images/pencil.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+
+
+<body>
+    <div id="header">
+        <img src="images/uke-icon.png" id="uke-icon" alt="ukulele with music notes emanating">
+        <p class="display-4">ukutabs redesign</p>
+        <p>a redesign of a website that offers free ukulele chords</p>
+    </div>
+
+    <div id="main">
+        <div class="section">
+            <p class="display-5 section-title">Introduction</p>
+
+            <div class="section-body">
+                <p>
+                    <a href="https://ukutabs.com/" target="_blank">Ukutabs.com</a> is a website that
+                    hosts ukulele chord sheets for a wide range of songs. The main components of its homepage include a
+                    navigation bar, a masthead, and its content body. While it has the essential ingredients for a good
+                    home page, its layout could compromise the site's usability.
+                </p>
+                <div class="mini-text">Here are some problems I observed -- take a look!</div>
+                <img src="images/uku-og1.svg" class="og-img" alt="ukutabs screenshot">
+                <img src="images/uku-og2.svg" class="og-img" alt="ukutabs screenshot">
+            </div>
+        </div>
+
+        <div class="section">
+            <p class="display-5 section-title">Low-Fidelity Prototyping</p>
+
+            <div id="proto-section">
+                <div id="proto-text">
+                    My first step in redesigning the site was to make low-fidelity prototypes. As mentioned above, most
+                    of the website's problems lie in its layout; thus, my solutions focus on improving Ukutabs's
+                    learnability for first time users. Below are the wireframes for the redesign's desktop, tablet, and
+                    mobile renders.
+                </div>
+
+                <div id="lofi-imgs">
+                    <div id="desktop-imgs">
+                        <div id="desktop-title">
+                            <p class="title-text">desktop</p>
+                        </div>
+                        <img src="images/ukutabs-desktop/nav.png" class="lofi-desktop" alt="desktop wireframe">
+                        <img src="images/ukutabs-desktop/popular.png" class="lofi-desktop" alt="desktop wireframe">
+                        <img src="images/ukutabs-desktop/tips.png" class="lofi-desktop" alt="desktop wireframe">
+                        <img src="images/ukutabs-desktop/discover.png" class="lofi-desktop" alt="desktop wireframe">
+                        <img src="images/ukutabs-desktop/ukuworld.png" class="lofi-desktop" alt="desktop wireframe">
+                    </div>
+
+                    <div id="tablet-imgs">
+                        <div id="tablet-title">
+                            <p class="title-text">tablet
+                            <p>
+                        </div>
+                        <img src="images/ukutabs-tablet/nav.png" class="lofi-tablet" alt="tablet wireframe">
+                        <img src="images/ukutabs-tablet/popular.png" class="lofi-tablet" alt="tablet wireframe">
+                        <img src="images/ukutabs-tablet/tips.png" class="lofi-tablet" alt="tablet wireframe">
+                        <img src="images/ukutabs-tablet/discover.png" class="lofi-tablet" alt="tablet wireframe">
+                        <img src="images/ukutabs-tablet/ukuworld.png" class="lofi-tablet" alt="tablet wireframe">
+                    </div>
+
+                    <div id="mobile-imgs">
+                        <div id="mobile-title">
+                            <p class="title-text">mobile</p>
+                        </div>
+                        <img src="images/ukutabs-mobile/nav.png" class="lofi-mobile" alt="mobile wireframe">
+                        <img src="images/ukutabs-mobile/drop.png" class="lofi-mobile" alt="mobile wireframe">
+                        <img src="images/ukutabs-mobile/popular.png" class="lofi-mobile" alt="mobile wireframe">
+                        <img src="images/ukutabs-mobile/tips.png" class="lofi-mobile" alt="mobile wireframe">
+                        <img src="images/ukutabs-mobile/discover.png" class="lofi-mobile" alt="mobile wireframe">
+                        <img src="images/ukutabs-mobile/ukuworld.png" class="lofi-mobile" alt="mobile wireframe">
+                    </div>
+                </div>
+
+                <div class="mini-text">
+                    These are the main changes presented by the redesign!
+                </div>
+                <img src="images/lofi1.svg" height="550" class="lofi-annotated" alt="desktop wireframe solutions">
+                <img src="images/lofi2.svg" height="600" class="lofi-annotated" style="margin-bottom: 3rem;" alt="desktop wireframe solutions">
+
+
+
+
+
+                <div id="proto-exp">
+                    <p id="mobile-exp">
+                        At this stage of my process, I designed my tablet layout to be identical to my desktop one.
+                        Expectedly, some of the elements would occupy less padding or width because of the smaller
+                        screen, but the essence of the layout remains the same. On the other hand, the mobile layout
+                        deviates a bit more. Unlike desktop and tablet, mobile does not have the anchor links in the
+                        navbar; instead, the navbar will host the logo and a button that will show the <b>dropdown
+                            menu</b>
+                        items upon click, pushing the current content down to accommodate for the menu.
+                    </p>
+
+                    <img src="images/ukutabs-tablet/nav.png" class="lofi-individual" alt="tablet nav wireframe">
+                    <img src="images/ukutabs-mobile/drop.png" class="lofi-individual" alt="mobile nav wireframe">
+                </div>
+
+                <p class="reflection-text">
+                    The new navbar with anchor links as its items gives the site its own <b>identity</b> -- the user
+                    will more easily gather that ukutabs is its own webpage. The new locations for the dropdown menu and
+                    the search bar will improve user <b>learnability</b> and <b>memorability</b>, as these commonly-used
+                    elements are now in more prominent spaces on the page. Most importantly, the overall layout redesign
+                    will allow the user to discriminate between the types of information on the webpage, improving user
+                    <b>efficiency</b>.
+                </p>
+            </div>
+        </div>
+
+        <div id="intro" class="section">
+            <p class="display-5 section-title">High-Fidelity Prototyping</p>
+
+            <div class="section-body">
+                <p style="align-self: flex-start;">
+                    Transitioning from lofi to hifi prototyping, I continued to hone in on an optimal user experience.
+                    Realizing that my original plan to push the content down to accommodate for the dropdown menu could
+                    be disorienting to the user, I decided to implement a <b>collapsing side menu</b> instead. Also, I
+                    realized that most tablet sizes could not accommodate for the original desktop navbar; thus, I
+                    designed my tablet render to have the collapsing side menu as well.
+                </p>
+
+                <div class="mini-text">The desktop layout remained relatively unchanged.</div>
+                <div id="hifi-annotations-main">
+                    <div class="hifi-annotations-sub">
+                        <img src="images/hifi/h1.png" class="hifi-desktop" alt="hifi prototype for desktop">
+                        <ul class="hifi-desk-text">
+                            <li>The navigation bar is a <b>bootstrap navbar</b> with a logo and navitem elements.</li>
+                            <li>The masthead is a <b>column-oriented flexbox</b>.</li>
+                            <li>On <b>focus</b>, the search bar's border switches to blue.</li>
+                            <li>On <b>hover</b>, <ul>
+                                    <li>the logo changes to a darker yellow font color.</li>
+                                    <li>the navitems change from white to gray.</li>
+                                    <li>the triangle next to the logo shows a menu.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="hifi-annotations-sub">
+                        <img src="images/hifi/h2.png" class="hifi-desktop" alt="hifi prototype for desktop">
+                        <ul class="hifi-desk-text">
+                            <li>The hover dropdown menu is a simple <b>block display</b>. </li>
+                            <li>On <b>hover</b>, the background color of each menu item will change to a darker shade of
+                                green.</li>
+                        </ul>
+                    </div>
+
+                    <div class="hifi-annotations-sub">
+                        <img src="images/hifi/h3.png" class="hifi-desktop" alt="hifi prototype for desktop">
+                        <ul class="hifi-desk-text">
+                            <li>Each body section is a <b>column</b>-oriented flexbox with <b>inner row</b>-oriented
+                                flexboxes that <b>wrap</b> when needed.</li>
+                            <li>The <b>outer</b> flexbox contains the title and the inner flexbox.</li>
+                            <li>The <b>inner</b> flexbox contains the information for each section.</li>
+                            <li>The songs are arranged in <b>tables</b>.</li>
+                            <li>On <b>hover</b>,</li>
+                            <ul>
+                                <li>The titles of each table will turn a darker shade of gray.</li>
+                                <li>The artist name will turn a darker shade of red.</li>
+                                <li>The song title will turn a lighter shade of red.</li>
+                            </ul>
+                        </ul>
+                    </div>
+
+                    <div class="hifi-annotations-sub">
+                        <img src="images/hifi/h4.png" class="hifi-desktop" alt="hifi prototype for desktop">
+                        <ul class="hifi-desk-text">
+                            <li>On <b>hover</b>, <ul>
+                                    <li>the book icons increase in brightness to emulate illumination.</li>
+                                    <li>the arrow icon turns to white.</li>
+                                </ul>
+                        </ul>
+                    </div>
+
+                    <div class="hifi-annotations-sub">
+                        <img src="images/hifi/h5.png" class="hifi-desktop" alt="hifi prototype for desktop">
+                        <ul class="hifi-desk-text">
+                            <li>The song table here is identical to ones in the first body section.</li>
+                            <li>The embedded YouTube video and the genres are also arranged in <b>tables</b>, featuring
+                                a header and only one row.</li>
+                            <li>On <b>hover</b>, the genre links turn gray.</li>
+                        </ul>
+                    </div>
+
+                    <div class="hifi-annotations-sub">
+                        <img src="images/hifi/h6.png" class="hifi-desktop" alt="hifi prototype for desktop">
+                        <ul class="hifi-desk-text">
+                            <li>On <b>hover</b>, the icons (for both UkuWorld and social media) decrease in brightness.
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!-- these are the tablet annotations -->
+                    <div class="mini-text">There were some considerable changes to the tablet design.</div>
+                    <div class="hifi-annotations-sub">
+                        <img src="images/hifi/t1.png" class="hifi-desktop" alt="hifi prototype for tablet">
+                        <ul class="hifi-tab-text">
+                            <li>Deviating from the desktop design, the tablet render will <b>not feature</b> a
+                                navigation with <b>anchor links</b>.
+                            </li>
+                            <li>Instead, the tablet render features a <b>collapsing side menu</b>.</li>
+                            <li>In the top left corner, there exists a <b>button</b> that opens a side menu.
+                                <ul>
+                                    <li>This essentially replaces the hover dropdown in the desktop design.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hifi-annotations-sub">
+                        <img src="images/hifi/t2.png" class="hifi-desktop" alt="hifi prototype for tablet">
+                        <ul class="hifi-tab-text">
+                            <li>On <b>hover</b>, <ul>
+                                    <li>the button background changes to a darker shade of yellow.</li>
+                                    <li>the triangle in the button changes to white.</li>
+                                </ul>
+                            </li>
+
+                            <li>On <b>click</b>, <ul>
+                                    <li>the button switches to grayscale to signify that it cannot be reclicked.</li>
+                                    <li>the side menu opens, appearing on top of the current design.</li>
+                                </ul>
+                            </li>
+                            <li>The side menu has <b>fixed position</b> and can be closed only by <b>clicking</b> the
+                                (x) button in its top right corner. <ul>
+                                    <li>After closing the side menu, the button returns to its original colors.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hifi-annotations-sub-smaller">
+                        <img src="images/hifi/t3.png" class="hifi-smaller" alt="hifi prototype for tablet">
+                        <img src="images/hifi/t4.png" class="hifi-smaller" alt="hifi prototype for tablet">
+                        <img src="images/hifi/t5.png" class="hifi-smaller" alt="hifi prototype for tablet">
+                        <ul class="hifi-tab-text-smaller">
+                            <li>The designs for the body sections remain fundamentally unchanged. Because the page will
+                                be organized in flexboxes that wrap, the content will automatically shift to fit within
+                                the given screen size.</li>
+                        </ul>
+                    </div>
+
+
+
+                    <!-- these are the mobile annotations -->
+                    <div class="mini-text">There mobile design now closely resembles the tablet design.</div>
+                    <div class="hifi-annotations-sub-smaller">
+                        <img src="images/hifi/m1.png" class="hifi-xsmall" alt="hifi prototype for mobile">
+                        <img src="images/hifi/m2.png" class="hifi-xsmall" alt="hifi prototype for mobile">
+                        <img src="images/hifi/m3.png" class="hifi-xsmall" alt="hifi prototype for mobile">
+                        <img src="images/hifi/m4.png" class="hifi-xsmall" alt="hifi prototype for mobile">
+                        <img src="images/hifi/m5.png" class="hifi-xsmall" alt="hifi prototype for mobile">
+                        <img src="images/hifi/m6.png" class="hifi-xsmall" alt="hifi prototype for mobile">
+                        <ul class="hifi-tab-text-xsmall">
+                            <li>Not much difference between tablet and mobile. The logo now takes up the width of the
+                                screen -- that's about it!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="section">
+            <p class="display-5 section-title">Final Design</p>
+            <div class="section-body">
+                <p>
+                    This brings us to the final design! Coming out of the prototyping process, I made some last-minute
+                    tweaks, related mostly to things like centering text or increasing color contrast. I also added a
+                    scroll-to-top gif to provide the user with an easy way to scroll back up to search a song or to
+                    access the dropdown menu. Make sure to check out the final design! All the links lead back to the
+                    pages of the original webiste, so feel free to interact with all the links in my redesign. Just
+                    below is a style guide showing all the elements and their interactive state.
+                </p>
+                <a href="https://floating-journey-88183.herokuapp.com/" target="_blank" id="site-button">check out the
+                    final design! »</a>
+                <img src="images/design.svg" alt="design guide for the website">
+            </div>
+        </div>
+
+        <div class="section">
+            <p class="display-5 section-title">Takeaways</p>
+            <div id="takeaway-section">
+                <img src="images/stuff.png" class="stuff-img" alt="my adorable stuffed bear">
+                <img src="images/stuff2.png" class="stuff-img" alt="my adorable stuffed bear">
+                <p id="takeaway-text">
+                    I had so much fun completing this project! Through this redesign, I learned the importance of
+                    <b>planning out</b> what you are going to build before you build it. The prototyping process allowed
+                    me not only to <b>step into</b> the users' shoes but also to <b>walk in</b> them. I have to admit --
+                    the fact that I am a ukulele player who uses this website quite often certainly helped me in this
+                    process. However, the skills I developed and strategies I learned are most definitely applicable to
+                    future projects!
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
